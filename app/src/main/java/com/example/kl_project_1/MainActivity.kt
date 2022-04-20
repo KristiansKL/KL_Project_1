@@ -29,6 +29,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         //Šī ir PVP poga, kas aizsūta spēlētājus uz otro aktivitāti un arī aizsūta spēlētāju vārdus
+        //Atsauce uz pogas izveidošanu un nākamās aktivitātes aktivizēšanu, jo aizmirsu kā to darīt.
+        //https://stackoverflow.com/questions/24610527/how-do-i-get-a-button-to-open-another-activity#:~:text=Inside%20your%20Activity%20instance's%20onCreate,your_buttons_id)%3B%20yourButton.
         buttonClick1.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
             var ss1 = eText1.getText().toString()
