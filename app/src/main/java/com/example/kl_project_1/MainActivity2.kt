@@ -54,6 +54,7 @@ class MainActivity2 : AppCompatActivity() {
 
 
         // Spēlētājs vai dators uzspiežot uz pogas izdara gājienu pārveidojot pogas tekstu un krāsu
+        //https://stackoverflow.com/questions/32671004/how-to-change-the-color-of-a-button
         fun move(a: Button){
             if (a.text == "" ) {
                 if (y == "O") {
@@ -237,22 +238,16 @@ class MainActivity2 : AppCompatActivity() {
 
             if(draw(matrix) == false) {
                 text1.text = "DRAW"
-                val s3 = text1.getText().toString()
-                intent.putExtra("Value3", s3)
                 lock = 0
                 alerttie.show()
             }
             if(winner(matrix)==10) {
                 text1.text = "WINNER X"
-                val s3 = text1.getText().toString()
-                intent.putExtra("Value3", s3)
                 lock = 0
                 alertwx.show()
             }
             if(winner(matrix)==-10) {
                 text1.text = "WINNER O"
-                val s3 = text1.getText().toString()
-                intent.putExtra("Value3", s3)
                 lock = 0
                 alertwo.show()
             }
